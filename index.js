@@ -4,6 +4,7 @@ window.onload = (event) => {
     sayGreeting()
     showNewQuote()
 }
+// can remove onload
 
 // clock function 24 hr format
 const startTime = () => {
@@ -80,7 +81,6 @@ getCoordinates()
 setInterval(getCoordinates, 30000)
 
 // GREETING (sayGreeting + name)
-
 // Say greeting based on time
 const greetingDiv = document.querySelector('#greeting-div')
 let greeting = 'morning'
@@ -289,3 +289,10 @@ const addNewQuote = (event) => {
 quoteText.addEventListener('click', showFormQuote)
 quoteAddButton.addEventListener('click', addNewQuote)
 newBGButton.addEventListener('click',getNewImage)
+
+
+// css bigger more visible texts and buttons
+// reposition todo list
+// media queries
+// edit to do list
+// remove "todo title"

@@ -32,6 +32,7 @@ body {
   background-color: pink;
   font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
+  font-weight: 900;
   text-shadow: 1px 1px 0px black;
   color: aliceblue;
 }
@@ -129,7 +130,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 360px;
-  font-size: 8rem;
+  font-size: 15rem;
   font-family: "Overlock", cursive;
   font-weight: 700;
   color: aliceblue;
@@ -260,6 +261,7 @@ textarea:focus, input:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+  font-size: 3rem;
 }
 
 .invisible {
@@ -304,6 +306,7 @@ textarea:focus, input:focus {
 }
 
 .focus-form input {
+  text-align: center;
   padding: 0.5rem;
   width: 300px;
   max-width: -webkit-fit-content;
@@ -320,8 +323,25 @@ textarea:focus, input:focus {
   margin-bottom: 20px;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 ::-webkit-input-placeholder {
