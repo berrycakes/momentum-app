@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Overlock&display=swap");
+html {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 95vh;
+  width: 95vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: pink;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 0px black;
+  color: aliceblue;
+}
+
+nav {
+  width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  color: aliceblue;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+#weather p {
+  margin: 0;
+}
+
+#weather #weather-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#weather .weather-temp {
+  font-size: 3rem;
+}
+
+#weather .weather-city {
+  position: relative;
+  top: -30px;
+}
+
+#weather img {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 360px;
+  font-size: 8rem;
+  font-family: "Overlock", cursive;
+  font-weight: 700;
+  color: aliceblue;
+  text-shadow: 2px 2px 0px black;
+}
+
+#greeting-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#name-greet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#name-div {
+  display: block;
+  padding-left: 10px;
+}
+
+#name-div:hover {
+  color: palevioletred;
+  cursor: text;
+  border-bottom: 2px solid rgba(240, 248, 255, 0.5);
+}
+
+.name-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.name-form input, .name-form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.name-form input {
+  width: 100px;
+  color: aliceblue;
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(240, 248, 255, 0.5);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.name-form button {
+  font-size: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  font-family: "Nunito", sans-serif;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+::-ms-input-placeholder {
+  text-align: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.edit-name-btn {
+  display: none;
+  padding: 0.5rem;
+  font-size: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  font-family: "Nunito", sans-serif;
+}
+
+#focus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.invisible {
+  display: none !important;
+}
+
+.visible {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+#goals {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#focus-question {
+  margin: 0;
+  text-align: center;
+}
+
+.focus-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.focus-form input {
+  padding: 0.5rem;
+  width: 300px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(240, 248, 255, 0.5);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 20px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+::-ms-input-placeholder {
+  text-align: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: aliceblue;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.goal-button {
+  display: none;
+}
+
+#goal-div {
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+}
+
+#goal-div:hover {
+  color: palevioletred;
+  cursor: text;
+  border-bottom: 2px solid rgba(240, 248, 255, 0.5);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#quote-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#quote-div #quote-author {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#quote-div button {
+  border: none;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#quote-div button:hover {
+  background-color: rgba(240, 248, 255, 0.438);
+  color: rgba(255, 192, 203, 0.527);
+}
+
+#todo-form {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#todo-form input, #todo-form button {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid rgba(240, 248, 255, 0.5);
+  background: transparent;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+#todo-form button {
+  border-bottom: none;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#todo-form button:hover {
+  background-color: rgba(240, 248, 255, 0.438);
+  color: rgba(255, 192, 203, 0.527);
+}
+
+#todo {
+  margin: 0.5 rem;
+  margin-top: 20px;
+  background: transparent;
+  color: aliceblue;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#todo p {
+  margin: 0;
+}
+
+.todo {
+  margin: 10px;
+  background: transparent;
+  color: aliceblue;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+  opacity: 0;
+}
+
+.delete-btn, .complete-btn {
+  border: none;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.delete-btn:hover, .complete-btn:hover {
+  background-color: rgba(240, 248, 255, 0.438);
+  color: rgba(255, 192, 203, 0.527);
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: black;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: aqua;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: aqua;
+}
+
+ul {
+  height: 10px;
+  margin: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+}
+
+ul li {
+  height: 20px;
+  width: 70vw;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.todo-container {
+  min-height: 10vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.todo-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.todo-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.todo-container::-webkit-scrollbar-thumb {
+  background: rgba(216, 112, 147, 0.692);
+}
+
+.todo-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.541);
+}
+
+#quote-form {
+  display: none;
+  margin-top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#quote-form input, #quote-form button {
+  text-align: center;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid rgba(240, 248, 255, 0.5);
+  background: transparent;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+#quote-form button {
+  font-size: 1rem;
+  border-bottom: none;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#quote-form button:hover {
+  background-color: rgba(240, 248, 255, 0.438);
+  color: rgba(255, 192, 203, 0.527);
+}
+
+.refresh-bg {
+  font-size: 1rem;
+  height: 20px;
+  border: none;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.refresh-bg:hover {
+  background-color: rgba(240, 248, 255, 0.438);
+  color: rgba(255, 192, 203, 0.527);
+}
+/*# sourceMappingURL=style.css.map */
